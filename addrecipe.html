@@ -25,10 +25,37 @@
     <p>Fill the form below to share your delicious recipe with us:</p>
 
     <form action="thankyou.html" method="post">
-      <!-- Recipe Name -->
-      <label for="recipename">Recipe Name:</label><br>
-      <input type="text" id="recipename" name="recipename" placeholder="Enter recipe name" required><br><br>
+      <!--  Full Name -->
+      <label for="name">Full Name:</label>
+     <input type="text" id="name" name="name" required><br><br>
 
+  <!--  Kitchen Name -->
+  <label for="text">Kitchen Name:</label>
+  <input type="text" id="text" name="text" required><br><br>
+
+  <!--  Phone Number -->
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone"><br><br>
+  
+  <!--  Recipe Title -->
+     <label for="recipe">Recipe Title:</label>
+      <input type="text" id="recipe" name="recipe" required><br><br>
+      
+  <!-- Country Dropdown -->
+      <label for="country">Recipe Origin:</label>
+       <select id="country" name="country">
+        <option value="nigeria">Nigeria</option>
+        <option value="ghana">Ghana</option>
+        <option value="kenya">Kenya</option>
+        <option value="others">Other</option>
+      </select><br><br>
+  <!--  Upload Image -->
+  <label for="image">Upload Recipe Image:</label>
+  <input type="file" id="image" name="image"><br><br>
+
+  <!--  Date Submitted -->
+  <label for="date">Date Submitted:</label>
+  <input type="date" id="date" name="date"><br><br>
       <!-- Meal Type -->
       <p>Select Meal Type:</p>
       <input type="radio" id="breakfast" name="mealtype" value="Breakfast">
@@ -46,15 +73,7 @@
       <label for="steps">Cooking Steps:</label><br>
       <textarea id="steps" name="steps" rows="6" cols="50" placeholder="Write step by step instructions..."></textarea><br><br>
 
-      <!-- Country Dropdown -->
-      <label for="country">Recipe Origin:</label>
-      <select id="country" name="country">
-        <option value="nigeria">Nigeria</option>
-        <option value="ghana">Ghana</option>
-        <option value="kenya">Kenya</option>
-        <option value="others">Other</option>
-      </select><br><br>
-
+      
       <!-- Submit Button -->
       <input type="submit" value="Submit Recipe">
     </form>
@@ -67,3 +86,4 @@
 
 </body>
 </html>
+
