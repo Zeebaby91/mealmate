@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recipes - Zainab's Cooking Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -12,7 +13,7 @@
     <h1>MealMate</h1>
     <nav>
       <a href="index.html">Home</a> |
-      <a href="recipes.html">Recipes</a> |
+      <a href="recipe.html">Recipes</a> |
        <a href="addrecipe.html">Add Recipe</a> |
       <a href="contact.html">Contact</a>
     </nav>
@@ -20,82 +21,167 @@
   </header>
 
   <!-- MAIN RECIPES SECTION -->
-  <main>
-    <!-- Recipe 1 -->
-    <article>
-      <h2>Jollof Rice</h2>
-      <p>A popular West African dish cooked with rice, tomatoes, and spices.</p>
+  <main class="recipes">
+  <!-- Recipe 1 -->
+  <article class="recipe-card">
+    <img src="img2.jpeg" alt="Jollof Rice">
+    <h2>Jollof Rice</h2>
+    <p>A vibrant, smoky West African rice dish cooked 
+      with tomatoes, peppers, and spices, 
+      loved for its rich flavor and festive aroma.</p>
 
-      <h3>Ingredients:</h3>
-      <ul>
-        <li>2 cups rice</li>
-        <li>4 tomatoes</li>
-        <li>2 red peppers</li>
-        <li>2 onions</li>
-        <li>Seasonings & oil</li>
-      </ul>
+    <h3>Ingredients:</h3>
+    <ul>
+      <li>2 cups rice</li>
+      <li>4 tomatoes</li>
+      <li>2 red peppers</li>
+      <li>2 onions</li>
+      <li>Seasonings & oil</li>
+    </ul>
 
-      <h3>Steps:</h3>
-      <ol>
-        <li>Wash the rice and set aside.</li>
-        <li>Blend tomatoes, peppers, and onions into a sauce.</li>
-        <li>Fry sauce in oil,add the pepper mixture</li>
-        <li>Ad seasonings and stock.</li>
-        <li>Add rice and cook until soft.</li>
-      </ol>
-    </article>
+    <h3>Steps:</h3>
+    <ol>
+      <li>Wash the rice and set aside.</li>
+      <li>Blend tomatoes, peppers, and onions into a sauce.</li>
+      <li>Fry sauce in oil, add the pepper mixture.</li>
+      <li>Add seasonings and stock.</li>
+      <li>Add rice and cook until soft.</li>
+    </ol>
+  </article>
 
-    <hr>
+  <!-- Recipe 2 -->
+  <article class="recipe-card">
+    <img src="img3.jpeg" alt="Fried Rice">
+    <h2>Fried Rice</h2>
+    <p>A colorful rice dish stir-fried with vegetables, 
+      liver or chicken, and spices, 
+      often served at parties and celebrations.</p>
 
-    <!-- Recipe 2 -->
-    <article>
-      <h2>Fried Rice</h2>
-      <p>A colorful and tasty dish mixed with vegetables and liver.</p>
+    <h3>Ingredients:</h3>
+    <ul>
+      <li>2 cups rice</li>
+      <li>Sliced carrots, peas, green pepper, and sweet corn</li>
+      <li>Vegetable oil</li>
+      <li>Liver or chicken and chicken stock</li>
+      <li>Seasonings</li>
+    </ul>
 
-      <h3>Ingredients:</h3>
-      <ul>
-        <li>2 cups rice</li>
-        <li>sliced Carrots, peas,green pepper, and sweet corn</li>
-        <li>vegetablesoil</li>
-        <li>Liver or chicken and chicken  stock</li>
-        <li>Seasonings, </li>
-      </ul>
+    <h3>Steps:</h3>
+    <ol>
+      <li>Parboil rice and set aside.</li>
+      <li>Stir-fry vegetables in oil.</li>
+      <li>Add liver/chicken and seasoning.</li>
+      <li>Mix rice with the vegetables and fry together.</li>
+    </ol>
+  </article>
 
-      <h3>Steps:</h3>
-      <ol>
-        <li>Parboil rice and set aside.</li>
-        <li>Stir-fry vegetables in oil.</li>
-        <li>Add liver/chicken and seasoning.</li>
-        <li>Mix rice with the vegetables and fry together.</li>
-      </ol>
-    </article>
+  <!-- Recipe 3 -->
+  <article class="recipe-card">
+    <img src="img4.jpeg" alt="Pounded Yam with Egusi Soup">
+    <h2>Pounded Yam with Egusi Soup</h2>
+    <p>A classic Nigerian delicacy — soft, stretchy yam paired with
+       rich melon seed soup cooked with palm oil, meat, and vegetables.</p>
 
-    <hr>
+    <h3>Ingredients:</h3>
+    <ul>
+      <li>Yam</li>
+      <li>Egusi (melon seeds)</li>
+      <li>Palm oil</li>
+      <li>Vegetables</li>
+      <li>Meat or fish</li>
+      <li>Seasonings</li>
+    </ul>
 
-    <!-- Recipe 3 -->
-    <article>
-      <h2>Pounded Yam with Egusi Soup</h2>
-      <p>A Nigerian delicacy made from yam and melon seed soup.</p>
+    <h3>Steps:</h3>
+    <ol>
+      <li>Boil yam until soft, then pound until smooth.</li>
+      <li>Fry ground egusi with palm oil and onions.</li>
+      <li>Add meat, seasonings, stock, and vegetables.</li>
+      <li>Serve hot with pounded yam.</li>
+    </ol>
+  </article>
 
-      <h3>Ingredients:</h3>
-      <ul>
-        <li>Yam</li>
-        <li>Egusi (melon seeds)</li>
-        <li>Palm oil</li>
-        <li>Vegetables</li>
-        <li>Meat or fish</li>
-        <li>Seasonings</li>
-      </ul>
+<!-- Recipe 4 -->
+  <article class="recipe-card">
+    <img src="img5.jpeg" alt="Suya">
+  <h2> Suya (Spicy Grilled Meat)</h2>
+   <p>Thinly sliced, skewered beef grilled with yaji spice mix, 
+    a street food favorite with a smoky, spicy kick.</p>
+    <h3>Ingredients:</h3>
+   <ul>
+    <li>500g beef (thinly sliced)</li>
+    <li>Suya spice mix (ground peanuts, cayenne pepper, ginger, garlic, paprika)</li>
+    <li>Salt & seasoning cubes</li>
+   <li>Vegetable oil</li>
+   <li>Onions & tomatoes (for garnish)</li>
+  </ul>
+  <h3>Steps:</h3>
+   <ol>
+   <li>Slice beef into thin strips.</li>
+    <li>Marinate with oil and suya spice mix for at least 1 hour.</li>
+   <li>Skewer the beef and grill until cooked.</li>
+   <li>Garnish with sliced onions, tomatoes, and cabbage.</li>
+    <li>Serve hot with flatbread or alone.</li>
+   </ol>
+  </article>
+<!-- Recipe 5 -->
+  <article class="recipe-card">
+    <img src="img6.jpeg" alt="Moi Moi">
+    <h2>Moi Moi (Steamed Bean Pudding)</h2>
+    <p>A soft and savory pudding made from blended beans, peppers,
+       onions, and oil, often served with rice or eaten alone.</p>
 
-      <h3>Steps:</h3>
-      <ol>
-        <li>Boil yam until soft,then pound until the yam is seedless and easily molded and you have a smooth consistency .</li>
-        <li>Fry ground egusi with palm oil and onions.</li>
-        <li>Add meat, a little bit of seasonings, stock, and vegetables(any of your choice).</li>
-        <li>Serve hot with pounded yam.</li>
-      </ol>
-    </article>
-  </main>
+    <h3>Ingredients:</h3>
+    <ul>
+      <li>2 cups peeled beans (black-eyed peas)</li>
+      <li>1 red bell pepper</li>
+      <li>2 scotch bonnet peppers</li>
+      <li>1 onion</li>
+      <li>1/2 cup vegetable oil</li>
+      <li>Seasoning cubes & salt</li>
+      <li>Boiled egg or fish (optional)</li>
+    </ul>
+
+    <h3>Steps:</h3>
+    <ol>
+      <li>Blend beans, peppers, and onion into a smooth paste.</li>
+      <li>Add oil, salt, and seasoning cubes. Mix well.</li>
+      <li>Pour into foil/nylon wraps or ramekins.</li>
+      <li>Add sliced boiled egg or fish if desired.</li>
+      <li>Steam for about 40–60 minutes until firm.</li>
+    </ol>
+  </article>
+
+  <!-- Recipe 6 -->
+  <article class="recipe-card">
+    <img src="img7.jpeg" alt="Pepper Soup">
+    <h2>Pepper Soup (Spicy Broth)</h2>
+
+    <p>A hot, spicy broth made with goat meat or fish and 
+      flavored with traditional pepper soup spices, 
+      perfect for cold evenings.</p>
+    <h3>Ingredients:</h3>
+    <ul>
+      <li>Pepper Soup (Spicy Broth)</li>
+      <li>Pepper soup spice mix</li>
+      <li>Scotch bonnet peppers</li>
+      <li>Onions</li>
+      <li>Seasoning cubes & salt</li>
+      <li>Scent leaves (optional)</li>
+      <li>meat/fish/chicken</li>
+    </ul>
+
+    <h3>Steps:</h3>
+    <ol>
+      <li>Wash meat/fish and boil with onions, seasoning, and salt.</li>
+      <li>Add pepper soup spice and blended peppers.</li>
+     <li>Cook until meat is tender.</li>
+      <li>Add scent leaves for aroma.</li>
+      <li>Serve hot with rice, yam, or alone.</li>
+    </ol>
+  </article>
+</main>
+
 
   <!-- FOOTER -->
   <footer>
