@@ -8,23 +8,39 @@
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1>MealMate</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="recipe.html">Recipes</a> |
-       <a href="addrecipe.html">Add Recipe</a> |
-      <a href="contact.html">Contact</a>
-    </nav>
-    <hr>
-  </header>
+  <header class="site-header">
+  
+  <div class="header-top">
+    <div class="logo-area">
+      <h1 class="brand-logo">MealMate<span class="dot">.</span></h1>
+    </div>
+
+    <div class="header-search">
+      <input type="text" id="navSearchBox" placeholder="Find a recipe or ingredient">
+      <button class="search-btn">🔍</button>
+    </div>
+
+    <div class="user-links">
+      <a href="#">Log In</a> <span>|</span> <a href="#">Sign Up</a>
+    </div>
+  </div>
+
+  <nav class="main-nav">
+    <ul class="nav-list">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="recipe.html">RECIPES</a></li>
+      <li><a href="addrecipe.html">ADD RECIPE</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+</header>
 
   <!-- MAIN RECIPES SECTION -->
   <main class="recipes">
   <!-- Recipe 1 -->
   <article class="recipe-card">
-    <img src="img2.jpeg" alt="Jollof Rice">
+    <img src="img/img2.jpeg" alt="Jollof Rice">
     <h2>Jollof Rice</h2>
     <p>A vibrant, smoky West African rice dish cooked 
       with tomatoes, peppers, and spices, 
@@ -51,7 +67,7 @@
 
   <!-- Recipe 2 -->
   <article class="recipe-card">
-    <img src="img3.jpeg" alt="Fried Rice">
+    <img src="img/img3.jpeg" alt="Fried Rice">
     <h2>Fried Rice</h2>
     <p>A colorful rice dish stir-fried with vegetables, 
       liver or chicken, and spices, 
@@ -77,7 +93,7 @@
 
   <!-- Recipe 3 -->
   <article class="recipe-card">
-    <img src="img4.jpeg" alt="Pounded Yam with Egusi Soup">
+    <img src="img/img4.jpeg" alt="Pounded Yam with Egusi Soup">
     <h2>Pounded Yam with Egusi Soup</h2>
     <p>A classic Nigerian delicacy — soft, stretchy yam paired with
        rich melon seed soup cooked with palm oil, meat, and vegetables.</p>
@@ -103,7 +119,7 @@
 
 <!-- Recipe 4 -->
   <article class="recipe-card">
-    <img src="img5.jpeg" alt="Suya">
+    <img src="img/img5.jpeg" alt="Suya">
   <h2> Suya (Spicy Grilled Meat)</h2>
    <p>Thinly sliced, skewered beef grilled with yaji spice mix, 
     a street food favorite with a smoky, spicy kick.</p>
@@ -126,7 +142,7 @@
   </article>
 <!-- Recipe 5 -->
   <article class="recipe-card">
-    <img src="img6.jpeg" alt="Moi Moi">
+    <img src="img/img6.jpeg" alt="Moi Moi">
     <h2>Moi Moi (Steamed Bean Pudding)</h2>
     <p>A soft and savory pudding made from blended beans, peppers,
        onions, and oil, often served with rice or eaten alone.</p>
@@ -154,7 +170,7 @@
 
   <!-- Recipe 6 -->
   <article class="recipe-card">
-    <img src="img7.jpeg" alt="Pepper Soup">
+    <img src="img/img7.jpeg" alt="Pepper Soup">
     <h2>Pepper Soup (Spicy Broth)</h2>
 
     <p>A hot, spicy broth made with goat meat or fish and 
@@ -187,6 +203,6 @@
   <footer>
     <p>&copy; 2025 Zainab’s Cooking Website | Made with ❤️ during Internship</p>
   </footer>
-
+<script src="recipe.js"></script>
 </body>
 </html>
