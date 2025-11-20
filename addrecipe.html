@@ -10,15 +10,32 @@
 <body>
   
 <!-- HEADER -->
-<header>
-  <h1> Share Your Recipe</h1>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="recipe.html">Recipes</a> |
-    <a href="addrecipe.html">Add Recipe</a> |
-    <a href="contact.html">Contact</a>
+<header class="site-header">
+  
+  <div class="header-top">
+    <div class="logo-area">
+      <h1 class="brand-logo">MealMate<span class="dot">.</span></h1>
+    </div>
+
+    <div class="header-search">
+      <input type="text" id="navSearchBox" placeholder="Find a recipe or ingredient">
+      <button class="search-btn">🔍</button>
+    </div>
+
+    <div class="user-links">
+      <a href="#">Log In</a> <span>|</span> <a href="#">Sign Up</a>
+    </div>
+  </div>
+
+  <nav class="main-nav">
+    <ul class="nav-list">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="recipe.html">RECIPES</a></li>
+      <li><a href="addrecipe.html">ADD RECIPE</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
   </nav>
-  <hr>
+
 </header>
 
 <!-- FORM FOR RECIPE SUBMISSION -->
@@ -26,9 +43,11 @@
   <h2>Submit Your Own Recipe</h2>
   <p>Fill the form below to share your delicious recipe with us:</p>
 
-  <form action="thankyou.html">
-    
-    <!-- Full Name -->
+  <form id="recipeForm">  
+    <fieldset class="details-group">
+      <legend>👤 Author Info</legend>
+       
+    <!--Full Name -->
     <label for="name">Full Name:</label>
     <input type="text" id="name" name="name" required>
 
@@ -43,6 +62,10 @@
     <!-- Phone Number -->
     <label for="phone">Phone Number:</label>
     <input type="tel" id="phone" name="phone">
+    </fieldset>
+
+    <fieldset class="details-group">
+      <legend>📝 Recipe Details</legend>
 
     <!-- Recipe Title -->
     <label for="recipe">Recipe Title:</label>
@@ -74,8 +97,10 @@
     </select>
 
     <!-- Upload Image -->
-    <label for="image">Upload Recipe Image:</label>
-    <input type="file" id="image" name="image" accept="image/*">
+    <label for="image" id="image-upload-label">
+    <span class="upload-text"> Click here to select an image...</span>
+</label>
+<input type="file" id="image" name="image" accept="image/*" style="display: none;">
    
     <!-- Date Submitted -->
     <label for="date">Date Submitted:</label>
@@ -95,16 +120,20 @@
       <input type="checkbox" name="terms" required>
       I agree to share my recipe on Zainab's Cooking Website
     </label>
-
-    <!-- Submit Button -->
-    <input type="submit" value="Submit Recipe">
+<button id="addBtn">Add Recipe</button>
+ </fieldset>
   </form>
 </main>
-
+<!-- Recipes will show up here -->
+    <section id="recipeList">
+  
+  <div id="recipesContainer"></div>
+</section>
 <!-- FOOTER -->
 <footer>
   <p>&copy; 2025 Zainab’s Cooking Website | Made with ❤️ during Internship</p>
 </footer>
-
+<script src="addrecipe.js"></script>
 </body>
+
 </html>
