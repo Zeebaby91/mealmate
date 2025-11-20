@@ -5,21 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zainab's Cooking Website</title>
   <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1> Welcome to Zainab’s Cooking World</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="recipe.html">Recipes</a> |
-      <a href="addrecipe.html">Add Recipe</a> |
-      <a href="contact.html">Contact</a>
-    </nav>
-    <hr>
-  </header>
+  <header class="site-header">
+  
+  <div class="header-top">
+    <div class="logo-area">
+      <h1 class="brand-logo">MealMate<span class="dot">.</span></h1>
+    </div>
 
+    <div class="header-search">
+      <input type="text" id="navSearchBox" placeholder="Find a recipe or ingredient">
+      <button class="search-btn">🔍</button>
+    </div>
+
+    <div class="user-links">
+      <a href="#">Log In</a> <span>|</span> <a href="#">Sign Up</a>
+    </div>
+  </div>
+
+  <nav class="main-nav">
+    <ul class="nav-list">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="recipe.html">RECIPES</a></li>
+      <li><a href="addrecipe.html">ADD RECIPE</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+</header>
   <!-- MAIN CONTENT -->
   <main>
   <section class="hero">
@@ -28,11 +44,19 @@
       <p>Discover, cook and share tasty meals with friends and family.</p>
       <p class="highlight"> Start your cooking journey with us today!</p>
       <a href="recipe.html" class="btn">Explore Recipes</a>
+      <ul id="recipeList"></ul>
+
+    </div>  <div class="hero-img">
+    
+    
     </div>
     <div class="hero-img">
-      <img src="img1.jpeg" alt="Jollof Rice" class="home-img">
+      <img src="img/img1.jpeg" alt="Jollof Rice" class="home-img">
     </div>
   </section>
+<!-- Link JS -->
+<script src="index.js"></script>
+
 </main>
 
   <!-- FOOTER -->
@@ -42,5 +66,3 @@
 
 </body>
 </html>
-
-
