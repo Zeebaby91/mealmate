@@ -19,3 +19,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
   // Reset form
   document.getElementById("contactForm").reset();
 });
+
+
+
+
