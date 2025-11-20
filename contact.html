@@ -9,50 +9,80 @@
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1>Contact Me</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="recipe.html">Recipes</a> |
-       <a href="addrecipe.html">Add Recipe</a> |
-      <a href="contact.html">Contact</a>
-    </nav>
-    <hr>
-  </header>
+ <header class="site-header">
+  
+  <div class="header-top">
+    <div class="logo-area">
+      <h1 class="brand-logo">MealMate<span class="dot">.</span></h1>
+    </div>
+
+    <div class="header-search">
+      <input type="text"id="navSearchBox" placeholder="Find a recipe or ingredient">
+      <button class="search-btn">🔍</button>
+    </div>
+
+    <div class="user-links">
+      <a href="#">Log In</a> <span>|</span> <a href="#">Sign Up</a>
+    </div>
+  </div>
+
+  <nav class="main-nav">
+    <ul class="nav-list">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="recipe.html">RECIPES</a></li>
+      <li><a href="addrecipe.html">ADD RECIPE</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+</header>
 
   <!-- CONTACT FORM -->
 <main>
   <h2>Get in Touch</h2>
-  <p>Have a question, suggestion, or feedback? Fill out the form below or reach us directly!</p>
+  <p class="intro-text">
+    Have a question, suggestion, or feedback? Fill out the form below or reach us directly!
+  </p>
 
-  <!-- Contact Form -->
-  <form action="submit.html" method="post" class="contact-form">
-    <label for="name">Your Name:</label>
-    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  <div class="contact-grid"> 
+      
+    <form action="submit.html" method="post" class="contact-form" id="contactForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-    <label for="email">Your Email:</label>
-    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea>
 
-    <input type="submit" value="Send Message">
-  </form>
-
-  <!-- Contact Info -->
-  <section class="contact-info">
-    <h3>Other Ways to Reach Us</h3>
-    <p>Email: <a href="zainababdulkarim91@gmail.com">zainababdulkarim91@gmail.com</a></p>
-    <p>Phone: +234 808 802 7872</p>
-    <div class="social-links">
-      <a href="#"> Facebook</a>
-      <a href="#"> Instagram</a>
-      <a href="#"> Twitter</a>
-    </div>
-  </section>
-
-
+      <input type="submit" value="Send Message">
+    </form>
+    
+    <section class="contact-info">
+      <h3>Other Ways to Reach Us</h3>
+      <p>Need a quick answer? Use the details below. We typically respond within 24 hours.</p>
+      
+      <div class="info-blocks">
+          <div class="info-item">
+              <span class="info-icon">📧</span>
+              <h4>Email Support</h4>
+              <p><a href="mailto:zainababdulkarim91@gmail.com">zainababdulkarim91@gmail.com</a></p>
+          </div>
+          <div class="info-item">
+              <span class="info-icon">📞</span>
+              <h4>Call Us</h4>
+              <p>+234 808 8XX XXX</p>
+          </div>
+          <div class="info-item">
+              <span class="info-icon">📍</span>
+              <h4>Location</h4>
+              <p>Abuja, Nigeria</p>
+          </div>
+      </div>
+    </section>
+      
+  </div>
 </main>
 
   <!-- FOOTER -->
@@ -62,5 +92,4 @@
 <script src="script.js"></script>
 </body>
 </html>
-
 
